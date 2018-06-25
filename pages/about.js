@@ -1,7 +1,11 @@
 import Navbar from '../components/Navbar'
+import Head from 'next/head';
 
 const About = () => (
   <div>
+    <Head>
+      <title>This is a about page</title>
+    </Head>
     <Navbar />
     <h3>About Page</h3>
     <p>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
