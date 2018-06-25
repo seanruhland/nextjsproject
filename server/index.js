@@ -14,10 +14,6 @@ app
 
     server.use("/api", showRoutes);
 
-    server.get('/api/shows', (req,res) => {
-      return res.end('We made it!');
-    })
-
     server.get("*", (req, res) => {
       return handle(req, res);
     });
