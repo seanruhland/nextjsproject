@@ -7,7 +7,9 @@
     "dev": "next"
   },
   "dependencies": {
+    "@zeit/next-sass": "^0.2.0",
     "next": "^6.0.3",
+    "node-sass": "^4.9.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
   }
