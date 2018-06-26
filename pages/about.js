@@ -2,7 +2,7 @@ import Navbar from '../components/Navbar'
 import Head from 'next/head';
 
 const About = () => (
-  <div>
+  <div class='page-section'>
     <Head>
       <title>This is a about page</title>
     </Head>

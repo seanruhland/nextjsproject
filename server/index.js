@@ -14,6 +14,12 @@ app
 
     server.use("/api", showRoutes);
 
+    server.get('/posts/:slug', (req,res) => {
+      let actualPage = '/post'
+      let queryParams = { title:req.params.slug};
+      return app.render(req, res, actualPage, queryParams)
+    })
+
     server.get("*", (req, res) => {
       return handle(req, res);
     });

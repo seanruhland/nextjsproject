@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+ import React, { Component } from "react";
 import Link from "next/link";
 import "./Navbar.scss";
 
@@ -10,7 +10,7 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav>
+      <nav >
         <div>
           <Link href="/">
             <a title="Our API">Home</a>

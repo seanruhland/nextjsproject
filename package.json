@@ -8,11 +8,19 @@
   },
   "dependencies": {
     "@zeit/next-sass": "^0.2.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-wrap-in-js": "^1.1.1",
     "express": "^4.16.3",
+    "glob": "^7.1.2",
     "next": "^6.0.3",
     "node-sass": "^4.9.0",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-loader": "^2.1.5",
+    "raw-loader": "^0.5.1",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "sass-loader": "^7.0.3",
+    "tailwindcss": "^0.6.1"
   },
   "devDependencies": {
     "autoprefixer": "^8.6.3"
