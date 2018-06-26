@@ -1,28 +1,23 @@
  import React, { Component } from "react";
 import Link from "next/link";
-import "./Navbar.scss";
 
-class Navbar extends Component {
-  constructor(props) {
-    super(props);
-    this.props = props;
-  }
 
-  render() {
-    return (
-      <nav >
-        <div>
-          <Link href="/">
-            <a title="Our API">Home</a>
-          </Link>
-          <Link href="/about">
-            <a title="About Next JS">About Next JS</a>
-          </Link>
-          <mark className="badge">Hello!</mark>
-        </div>
-      </nav>
-    );
-  }
-}
+const Navbar = () => (
+  <nav className="navbar navbar-expand navbar-dark bg-dark mb-4">
+    <div className="container">
+      <a className="navbar-brand" href="#">BitzPrice</a>
+      <div className="collapse navbar-collapse">
+        <ul className="navbar-nav ml-auto">
+          <li className="nav-item">
+            <Link href="/"><a className="nav-link">Home</a></Link>
+          </li>
+          <li className="nav-item">
+            <Link href="/about"><a className="nav-link">About</a></Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+);
 
 export default Navbar;
